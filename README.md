@@ -9,7 +9,6 @@ Therlock follows the principle of semantic versioning. I plan to actively mainta
 The library is written in pure Java and is fully compatible with Android starting from API level 16 as well as with Kotlin on the JVM.
 
 # Getting started
-### The library is not yet available on Maven Central. This will happen in the next few days.
 
 To start using Therlock in your project, add the dependency.
 
