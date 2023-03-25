@@ -151,6 +151,8 @@ public class BlockedThreadDetector {
      * Start the detector. If it is already running, the method just returns.
      *
      * @param delay An initial delay in milliseconds from when the detection starts.
+     *              Note that {@link #isRunning()} returns true as soon as this method returns,
+     *              regardless of whether the detection is delayed or not.
      * @return The current instance to chain multiple calls.
      */
     public synchronized BlockedThreadDetector startDetection(long delay) {
@@ -179,6 +181,7 @@ public class BlockedThreadDetector {
 
     /**
      * @return True if the detector is running.
+     * This is the case as soon as startDetection was called but stopDetection was not yet called.
      */
     public synchronized boolean isRunning() {
         return inspectionTask != null;
