@@ -116,7 +116,7 @@ The ThreadAccessor executes code on the monitored thread at the specified interv
 All checks happen on background threads. On the monitored thread, a callback is submitted to an ExecutorService of the library at the specified interval only. The additional load on the monitored thread is negligible.
 
 ### Can I use it on Android?
-Yes. In addition, a version adapted for Android will be released soon.
+For Android, it is recommended to use [ANR Detective][anr-detective link], which is based on this library but is lifecycle aware and contains useful default parameters. However, you can also use this library directly on Android.
 
 # Contribution
 
@@ -138,3 +138,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+[anr-detective link]:https://github.com/conena/anr-detective
