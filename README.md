@@ -17,7 +17,7 @@ To start using Therlock in your project, add the dependency.
 <dependency>
   <groupId>com.conena.therlock</groupId>
   <artifactId>therlock</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.conena.therlock:therlock:1.0.0'
+    implementation 'com.conena.therlock:therlock:1.1.0'
 }
 ```
 
