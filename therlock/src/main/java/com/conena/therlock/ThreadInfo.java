@@ -77,7 +77,7 @@ public class ThreadInfo extends Throwable {
             int priority,
             @NotNull StackTraceElement @NotNull [] stackTrace
     ) {
-        super(String.format("Stacktrace of the thread '%s'.", name));
+        super(String.format("Stacktrace of the thread '%s' (id: %d, group: '%s').", name, id, groupName));
         setStackTrace(stackTrace);
         this.name = name;
         this.groupName = groupName;
